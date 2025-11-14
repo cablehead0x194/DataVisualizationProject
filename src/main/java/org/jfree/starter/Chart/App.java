@@ -1,4 +1,5 @@
 package org.jfree.starter.Chart;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
@@ -20,15 +21,23 @@ public class App {
         String name ="";
         String date = "";
         int length = 0;
-
+        boolean valid = false;
 
         System.out.println("Enter name of data elements: ");
         name = scanner.next();
         scanner.nextLine();
 
         System.out.println("Enter number of data points: ");
-        length = scanner.nextInt();
-        scanner.nextLine();
+        do {
+            try {
+                length = scanner.nextInt();
+                scanner.nextLine();
+                valid = true;
+            } catch (InputMismatchException e) {
+                System.out.println("Invalid input. Please enter a whole number.");
+                scanner.nextLine();
+            }
+        }   while (!valid);
 
 
         dataPoints array = new dataPoints(name, length);

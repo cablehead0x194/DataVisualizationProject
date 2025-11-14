@@ -9,7 +9,9 @@ import java.util.Scanner;
  * 3. Add exceptions and enable methods to request you try again if an input is not correct
  * 4. Allow multiple data sets to be loaded
  * 5. Need to change dataPoints to a linkedlist for better flexibility
+ * 6. Test.
  */
+
 public class App {
 
     /**

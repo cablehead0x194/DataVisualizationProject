@@ -12,8 +12,6 @@ public class SaveLoadDataSets {
     public SaveLoadDataSets() {
     }
 
-    ;
-
     public SaveLoadDataSets(dataPoints dataSet) {
         this.dataSet = dataSet;
     }
@@ -50,9 +48,13 @@ public class SaveLoadDataSets {
 
             myWriter.close();
             System.out.println("Successfully wrote to the file.");
-        } catch (IOException e) {
+        }
+        catch (IOException e) {
             System.out.println("An error occurred.");
             e.printStackTrace();
+        }
+        catch (NullPointerException e) {
+            System.out.println("Data set has not been initialized or loaded.");
         }
     }
 
@@ -88,12 +90,13 @@ public class SaveLoadDataSets {
             return array;
         }
         catch (FileNotFoundException e) {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
+            System.out.println("File does not exist or is not readable.");
+
         }
 
         return null;
     }
+
 
 
 }

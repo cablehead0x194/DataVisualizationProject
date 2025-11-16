@@ -52,28 +52,37 @@ public class App {
      * Need to make the array accesible but immutable
      */
     public static void addDataPoints(dataPoints array) {
-        Scanner scanner = new Scanner(System.in);
-        dataPoints list = array;
-        double points = 0.0;
-        String date = "";
+        try {
+            Scanner scanner = new Scanner(System.in);
+            dataPoints list = array;
+            double points = 0.0;
+            String date = "";
 
-        //need to add exception for wrong input type and try again message.
-        for(int i = 0; i < array.getArray().length; ++i) {
-            System.out.println("Enter data point: ");
-            points = scanner.nextDouble();
-            scanner.nextLine();
+            //need to add exception for wrong input type and try again message.
+            for (int i = 0; i < array.getArray().length; ++i) {
+                System.out.println("Enter data point: ");
+                points = scanner.nextDouble();
+                scanner.nextLine();
 
-            System.out.println("Enter date (DD/MM/YYYY): ");
-            date = scanner.next();
+                System.out.println("Enter date (DD/MM/YYYY): ");
+                date = scanner.next();
 
-            array.addElement(points, date);
+                array.addElement(points, date);
+            }
         }
-
+        catch (NullPointerException e) {
+            System.out.println("Data set has not been initialized or loaded.");
+        }
     }
 
     //to view data set
     public static void printDataPoints (dataPoints list) {
-        list.printArray();
+        try {
+            list.printArray();
+        }
+        catch (NullPointerException e) {
+            System.out.println("A data set does not exist to save.");
+        }
     }
 
     public static void SaveObjectArrayStart(dataPoints list) {

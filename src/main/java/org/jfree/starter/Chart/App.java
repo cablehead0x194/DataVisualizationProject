@@ -95,6 +95,11 @@ public class App {
         return sl.ReadFile();
     }
 
+    public static void loadSets() {
+        SaveLoadDataSets ls =  new SaveLoadDataSets();
+        ls.viewSavedDataSets();
+    }
+
 
 
 
@@ -141,8 +146,7 @@ public class App {
                 case 6:
                     list[0] = loadDataSet();
                 case 7:
-                    //view saved data sets, add saved data sets to an array
-                    //upon selecting a saved data set upload it to view.
+                    loadSets();
                     break;
                 case 0:
                     System.out.println("Goodbye!");

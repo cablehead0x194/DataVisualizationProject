@@ -1,0 +1,70 @@
+[33mcommit b1dbb8f812d6759ec57b389538770c74ed54a674[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: cablehead0x194 <caleb.b.bishop@gmail.com>
+Date:   Sun Nov 16 19:38:37 2025 -0600
+
+    Revert "Updates:"
+    
+    This reverts commit 00e2a01d33816a1a0cd9fe81a2a6299628541ff1.
+
+[33mcommit c1055772003d2e0308c4bbae8521a2638fb1d9e8[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: cablehead0x194 <caleb.b.bishop@gmail.com>
+Date:   Sun Nov 16 19:21:47 2025 -0600
+
+    Updates:
+    1. Created method on menu to view saved data sets in filepath "data" in working directory. File loads.
+    Issue: terminal prints out names of all files after loading requested file.
+
+[33mcommit ff5e74bb9423f743437f59c01cbe3b812fe57eef[m
+Author: cablehead0x194 <caleb.b.bishop@gmail.com>
+Date:   Sun Nov 16 19:19:07 2025 -0600
+
+    Revert "Updates:"
+    
+    This reverts commit 00e2a01d33816a1a0cd9fe81a2a6299628541ff1.
+
+[33mcommit b1c6e5e16fa1d8fd929289c9ba5ff51ad783610b[m
+Author: cablehead0x194 <caleb.b.bishop@gmail.com>
+Date:   Sun Nov 16 19:17:57 2025 -0600
+
+    Revert "Updates:"
+    
+    This reverts commit 00e2a01d33816a1a0cd9fe81a2a6299628541ff1.
+
+[33mcommit 00e2a01d33816a1a0cd9fe81a2a6299628541ff1[m
+Author: cablehead0x194 <caleb.b.bishop@gmail.com>
+Date:   Sun Nov 16 19:15:19 2025 -0600
+
+    Updates:
+    1. Created method on menu to view saved data sets in filepath "data" in working directory. File loads.
+    Issue: terminal prints out names of all files after loading requested file.
+
+[33mcommit dfd2ad89bca12be9eaac64c267ddb5ffe9a87a03[m
+Author: cablehead0x194 <caleb.b.bishop@gmail.com>
+Date:   Sat Nov 15 18:35:08 2025 -0600
+
+    test
+
+[33mcommit 5ea511b2157a7fa45acc619202654b086e69ad03[m
+Author: cablehead0x194 <caleb.b.bishop@gmail.com>
+Date:   Sat Nov 15 18:13:43 2025 -0600
+
+    Added exceptions to the following selections in program menu.
+    1. View Data Set, Add to Data Set, Save Data Set: if no data set is loaded or initialized then informs user and does not crash program.
+
+[33mcommit 13aceb2df231fb6d221c4c0c930f15f18a87afda[m
+Author: cablehead0x194 <caleb.b.bishop@gmail.com>
+Date:   Fri Nov 14 11:56:39 2025 -0600
+
+    Created error catch for data input on createDataSet Method. Instead of throwing exception and closing program asks for new input.
+
+[33mcommit c7bf3872adc5882873cbdf281df1492680bf991f[m
+Author: cablehead0x194 <caleb.b.bishop@gmail.com>
+Date:   Fri Nov 14 11:52:46 2025 -0600
+
+    Created error catch for data input on createDataSet Method. Instead of throwing exception and closing program asks for new input.
+
+[33mcommit 123a8cc45ea6a7325f44681a6782c66bd15c72cc[m
+Author: cablehead0x194 <caleb.b.bishop@gmail.com>
+Date:   Tue Nov 11 08:11:48 2025 -0600
+
+    First time adding files to repository.

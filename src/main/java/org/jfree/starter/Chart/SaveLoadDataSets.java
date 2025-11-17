@@ -3,6 +3,7 @@ package org.jfree.starter.Chart;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Files;
 import java.util.Scanner;
 import java.io.FileNotFoundException;
 
@@ -95,6 +96,18 @@ public class SaveLoadDataSets {
         }
 
         return null;
+    }
+
+    public void viewSavedDataSets() {
+        String dir = "data";
+
+        File directory = new File(dir);
+
+        File[] files = directory.listFiles();
+
+        if (files != null) {
+            for (File fl : files) System.out.println(fl.getName());
+        }
     }
 
 

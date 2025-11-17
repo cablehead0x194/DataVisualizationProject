@@ -102,8 +102,6 @@ public class App {
 
 //test
 
-
-
     public static void main(String[] args) {
 
         dataPoints[] list = new dataPoints[10];

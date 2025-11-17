@@ -3,7 +3,6 @@ package org.jfree.starter.Chart;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.Files;
 import java.util.Scanner;
 import java.io.FileNotFoundException;
 
@@ -70,7 +69,7 @@ public class SaveLoadDataSets {
         System.out.println("Please enter the name of the data set file: ");
         fileName = scanner.next();
 
-        File myObj = new File("data/" + fileName);
+        File myObj = new File(fileName);
 
         // create new dataPoints set and add information from scanner into new dataset.
         Scanner myReader = new Scanner(myObj);
@@ -96,18 +95,6 @@ public class SaveLoadDataSets {
         }
 
         return null;
-    }
-
-    public void viewSavedDataSets() {
-        String dir = "data";
-
-        File directory = new File(dir);
-
-        File[] files = directory.listFiles();
-
-        if (files != null) {
-            for (File fl : files) System.out.println(fl.getName());
-        }
     }
 
 

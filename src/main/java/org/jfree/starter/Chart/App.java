@@ -100,7 +100,35 @@ public class App {
         ls.viewSavedDataSets();
     }
 
-//test
+    public static void grOptionsMenu() {
+        Scanner scanner = new Scanner(System.in);
+        int choice;
+
+        do {
+            System.out.println("\n=== Graph Options Menu ===");
+            System.out.println("1. Create Data Set");
+
+            System.out.println("0. Return to main menu.");
+            System.out.print("Enter your choice: ");
+
+            choice = scanner.nextInt();
+
+            switch (choice) {
+                case 1:
+                    System.out.println("Doesn't do anything yet");
+
+                case 0:
+                    break;
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+            }
+        }
+            while (choice != 0) ;
+        }
+
+
+
+
 
     public static void main(String[] args) {
 
@@ -119,6 +147,7 @@ public class App {
             System.out.println("5. Save Data Set");
             System.out.println("6. Load Data Set");
             System.out.println("7. View Saved Data Sets");
+            System.out.println("8. Graph Settings");
             System.out.println("0. Exit");
             System.out.print("Enter your choice: ");
 
@@ -146,6 +175,8 @@ public class App {
                 case 7:
                     loadSets();
                     break;
+                case 8:
+                    grOptionsMenu();
                 case 0:
                     System.out.println("Goodbye!");
                     break;

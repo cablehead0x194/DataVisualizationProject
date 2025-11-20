@@ -1,3 +1,5 @@
+# Archived project Note: 
+Project not initiated correctly on IDE with libraries. Decided to archive and create new repository with concise and clearer set up. Repository is a mess and a new approach to learning to use github was used. 
 # Data Tracking and Visualization
 
 ## Description
